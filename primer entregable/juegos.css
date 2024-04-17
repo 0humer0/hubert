@@ -1,0 +1,375 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/juegos.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.menu{/*contenedor de la barra de avegacion */
+    background-color: rgb(36, 35, 35);
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 10px;
+    width: 800px ;
+    height:50px ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.menu1{/*configuracion del contenido del menu*/
+    position: relative;
+    display: inline-block;
+    font-size: 1em; /*tamaño de la fuente*/
+    font-weight: 500;
+    color: rgb(216, 210, 210);
+    text-decoration: none ;
+    padding:0 40px;/*separacion de izquierdo y derecho */
+    z-index:1;
+}
+.selector{ /*selector de menu__color_rojo__*/
+    position: absolute;
+    top: 0;
+    left: 163px;/*modificar segundo en que pagina me encuentro*/
+    width: 120px;
+    height: 100%;
+    background: linear-gradient(45deg, #4f1919, #ff3333);
+    border-radius: 10px;
+    transition: .5s;
+}
+
+/*transicion de del selector para el menu*/
+nav a:nth-child(1):hover~span{/*INICIO*/
+    left: 30px;
+}
+nav a:nth-child(2):hover~span{/*JUEGOS*/
+    left: 163px;
+    width: 120PX;
+}    
+nav a:nth-child(3):hover~span{/*CURSOS CCNA*/
+    left: 317px;
+    width: 140px;
+}
+nav a:nth-child(4):hover~span{/*CONTACTO*/
+    left: 507px;
+    width: 120px;
+}
+nav a:nth-child(5):hover~span{/*SALIR*/
+    left: 660px;
+    width:100px ;
+}
+
+/**************************************HEADER***********************************************/
+.primerdestacado{
+    width: 1500px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+.covertor{
+    background-color: rgba(225, 13, 175, 0.347);
+    border: 5px solid #f3eeee34;
+    border-radius: 20px;
+    width:700px ;
+    height:125px ;
+    padding: 10px 10px;
+
+}
+.covertor2{
+    background-color: rgba(21, 22, 22, 0.479);
+    width:700px ;
+    height:135px ;
+    padding: 10px 10px;
+    margin-top: 30px;
+
+}
+.primerdestacado h1, p{
+    color: #e9e3e3;
+    font-family: "Courier New", monospace;
+    
+}
+
+.logosteam{
+    width: 220px;
+}
+/*----------------------------------PRIMERCONTENEDOR----------------------------------------------------*/
+#contenedorjuego1{
+    border: 5px solid rgba(250, 250, 250, 0.192);/*contenedor de intemsimagens-imagenes-flecha*/
+    border-radius: 50px;
+    width:920px;/*ancho*/
+    height: 430px;/*alto*/
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;/*margen superio del todo le contedor*/
+}
+.itemsimagenes{
+    border: 1px solid rgba(255, 255, 255, 0);/*borde a cada del contenedor de cada imagen */ 
+    height: 100%;
+    width:  100%;
+    position: relative;
+    margin: auto;
+    display: block;
+
+}
+.imagen{/*tarjetascarusel*/
+    height: 100%; /*altura del back*/
+    width: 100%;
+}
+img{
+    display: block;
+    width: 100%;
+    height:100%;
+    border-radius: 20px;
+    border: 1px solid;
+}
+
+.flecha{
+    height: 100%;/*alto al igual que se padre itemsimagens*/
+    width: 100%;/*ancho al igual que se padre itemsimagens*/
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;/*se aliniente en el centro vertical*/
+    justify-content: space-between;/*hace que las flechas pongan dercha----- izquierda*/
+    font-size: 40px;
+    color: brown;
+}
+.flechita{
+    width:100px ;
+    border: 5px solid #4f1919;
+    border-radius:20px ;
+}
+
+/*---------------------------------------------SEGUNGO CONTENEDOR--------------------------------------------------------*/
+.segundodestacado{
+    width: 1500px;
+    height: 270px;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+.tapa{
+    background-color: rgba(225, 13, 175, 0.347);
+    border: 5px solid #f3eeee34;
+    border-radius: 20px;
+    width:700px ;
+    height:150px ;
+    padding: 10px 10px;
+}
+.tapa2{
+    background-color: rgba(21, 22, 22, 0.479);
+    width:800px ;
+    height:100px ;
+    padding: 10px 10px;
+    margin-top: 15px;
+}
+.segundodestacado h1, p{
+    color: #e9e3e3;
+    font-family: "Courier New", monospace;
+}
+.logoepick{
+    width: 80px;
+
+}
+/*_______________________________________________________________*/
+
+#contenedorjuego2{
+    border: 5px solid rgba(250, 250, 250, 0.192);/*contenedor de intemsimagens-imagenes-flecha*/
+    border-radius: 50px;
+    width:920px;/*ancho*/
+    height: 430px;/*alto*/
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;/*margen superio del todo le contedor*/
+}
+.itemepick{
+    border: 1px solid rgba(255, 255, 255, 0);/*borde a cada del contenedor de cada imagen */ 
+    height: 100%;
+    width:  100%;
+    position: relative;
+    margin: auto;
+    display: block;
+
+}
+.imagen1{/*tarjetascarusel*/
+    height: 100%; /*altura del back*/
+    width: 100%;
+}
+img{
+    display: block;
+    width: 100%;
+    height:100%;
+    border-radius: 20px;
+    border: 1px solid;
+}
+
+.flecha1{
+    height: 100%;/*alto al igual que se padre itemsimagens*/
+    width: 100%;/*ancho al igual que se padre itemsimagens*/
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;/*se aliniente en el centro vertical*/
+    justify-content: space-between;/*hace que las flechas pongan dercha----- izquierda*/
+    font-size: 40px;
+    color: brown;
+}
+.flechita{
+    width:100px ;
+    border: 5px solid #4f1919;
+    border-radius:20px ;
+}
+/*-------------------------------------TERCER CONTENEDOR--------------------------------------------*/
+.tercerdestacado{
+    width: 1500px;
+    height: 270px;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+.lama{
+    background-color: rgba(225, 13, 175, 0.347);
+    border: 5px solid #f3eeee34;
+    border-radius: 20px;
+    width:700px ;
+    height:150px ;
+    padding: 10px 10px;
+}
+.lama1{
+    background-color: rgba(21, 22, 22, 0.479);
+    width:800px ;
+    height:80px ;
+    padding: 10px 10px;
+    margin-top: 25px;
+}
+.tercerdestacado h1, p{
+    color: #e9e3e3;
+    font-family: "Courier New", monospace;
+}
+.lamamensaje{
+    width: 80px;
+}
+/*__________________________________________________________________________*/
+
+.contenedorjuego3{
+    width: 1500PX;
+    height: 500PX;
+    margin: 0 auto;
+    
+}
+
+.lamase{
+    width:1500px ;
+    height:500px ;
+    margin: 0 auto;
+    padding: 0 40px;
+
+
+
+}
+
+.lomo1{
+    text-align: center;
+    background-color: rgba(115, 95, 13, 0.579);
+    display: inline-block;
+    border: 1px solid #ffffff46;
+    border-radius: 20px;
+    margin: 0 auto;
+    width:300px ;
+    height:500px ;
+    margin: 0 25px;
+}
+.lomo2{
+    background-color: rgba(62, 184, 10, 0.686);
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #fffdfd43;
+    border-radius: 20px;
+    margin: 0 auto;
+    width:300px ;
+    height:500px ;
+    margin: 0 25px;
+    
+}
+.lomo3{
+    background-color: rgba(50, 175, 152, 0.673);
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #fffcfc82;
+    border-radius: 20px;
+    margin: 0 auto;
+    width:300px ;
+    height:500px ;
+    margin: 0 25px;
+}
+.lomo4{
+    background-color: rgba(97, 140, 3, 0.636);
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #ffffff53;
+    border-radius: 20px;
+    margin: 0 auto;
+    width:300px ;
+    height:500px ;
+    margin: 0 25px;
+}
+.lamase img{
+    width: 100%;
+    height: 300px;
+}
+
+
+/**********************************FOOTER********************************************/
+.pie{
+    background-color:rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+    height:300px;
+    margin-top: 25px;
+    margin: 0 auto;
+    
+}
+.linia{
+    background-color: rgb(251, 0, 0);
+    width: 100%;
+    height:5px;
+}
+.encuadre{
+    margin: 0 auto;
+    width:1300px ;
+    height:200px ;
+    margin-top: 30px;
+
+}
+.pie1{
+    margin-top: 25px;
+    display: inline-block;
+    color: aqua;
+    margin: 0 auto;
+    width: 200px;
+    margin:0 50px ;
+    padding-top: 10px;
+}
+.pie img{
+    background-color: azure;
+    border-radius: 50px ;
+    border: solid #f1e9e9;
+    width: 100px ;
+    text-align: center;
+    margin-left: 50px;
+}
+.pie h3, h2{
+    color: #fffafa;
+}

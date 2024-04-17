@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background-image: url(img/inicio.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.menu{/*contenedor de la barra de avegacion */
+    background-color: rgb(36, 35, 35);
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 10px;
+    width: 800px ;
+    height:50px ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.menu1{/*configuracion del contenido del menu*/
+    position: relative;
+    display: inline-block;
+    font-size: 1em; /*tamaño de la fuente*/
+    font-weight: 500;
+    color: rgb(216, 210, 210);
+    text-decoration: none ;
+    padding:0 40px;/*separacion de izquierdo y derecho */
+    z-index:1;
+}
+.selector{ /*selector de menu__color_rojo__*/
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 120px;
+    height: 100%;
+    background: linear-gradient(45deg, #4f1919, #ff3333);
+    border-radius: 10px;
+    transition: .5s;
+
+}
+
+/*transicion de del selector para el menu*/
+nav a:nth-child(1):hover~span{/*INICIO*/
+    left: 30px;
+    
+}
+nav a:nth-child(2):hover~span{/*JUEGOS*/
+    left: 163px;
+    width: 120px;
+}    
+nav a:nth-child(3):hover~span{/*CURSOS CCNA*/
+    left: 317px;
+    width: 140px;
+}
+nav a:nth-child(4):hover~span{/*CONTACTO*/
+    left: 507px;
+    width: 120px;
+}
+nav a:nth-child(5):hover~span{/*salir*/
+    left: 650px;
+    width:120px ;
+}
+
+
+/***************************************INTRO********************************************************/
+.uno{
+    width:1500px ;
+    height:140px ;
+    margin: 0 auto;
+    
+}
+
+.intro{
+    background-color: #4f1919d4;
+    width:900px ;
+    height:130px ;
+    border-radius:20px ;
+    margin: 40px 0px;
+    padding:15px 25px;
+}
+.intro, h1{
+    color: azure;
+}
+/*************************************CONTENEDOR***********************************************/
+
+
+.cuadros{/*contenedor de imagenes*/
+    width: 1500px;
+    height: 260px;
+    margin: 0 auto; /*margen centrado verticsl */
+    margin-top: 25px; /*separacion superio con el otro contenedor*/
+    padding-top: 25px;
+    display: flex;/*forma 2 de sentrar*/
+    justify-content: center;/*--------*/
+}
+.cuadro1{
+    border: 5px solid #333;
+    border-radius: 20px;
+    width: 380px ;
+    height: 200px;
+    margin: 0 2px;
+    
+}
+
+.texto-cuadro{/*contenedor de texto de los cuadros*/
+
+    width: 1500px;
+    height:350px ;
+    margin: 0 auto;  
+}  
+.mele1{
+    background-color: #4a42428f;
+    margin: 0 auto; 
+    display: inline-block;
+    text-align: center;
+    border: 5px solid #333;
+    border-radius: 20px;
+    width: 340px ;
+    height: 300px;
+    margin: 0 auto; 
+    margin: 0 15px;
+    margin-top: -41px;
+    padding-top: 30px;
+}
+.mele1 h2{
+    color: rgb(219, 8, 8);
+}
+.mele1 p{
+    color: bisque;
+}
+/*-------------------------------------------------------video---------------------------------------------------------------------------*/
+.mira{
+    width:1300px ;
+    height:1065px ;
+    margin: 0 auto;
+
+}
+.mira video{
+    width: 800px ;
+    height: auto;
+    border: 10px solid beige;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-left: 25px;
+    margin-top: 25px;
+
+}
+.mensaje{
+    background-color: rgba(54, 39, 21, 0.534);
+    width:1000px ;
+    height:90px ;
+    padding: 10px 20px;
+}
+.mensaje, h2{
+    color: #ff3333;
+}
+.mensaje,p{
+    color: bisque;
+}
+/**********************************FOOTER********************************************/
+.pie{
+
+    background-color:rgb(0, 0, 0);
+    text-align: center;
+    width: 100%;
+    height:300px;
+    margin-top: 25px;
+    margin: 0 auto;
+    
+}
+.linia{
+    background-color: rgb(251, 0, 0);
+    width: 100%;
+    height:5px;
+}
+.encuadre{
+    margin: 0 auto;
+    width:1300px ;
+    height:200px ;
+    margin-top: 30px;
+    
+
+}
+.pie1{
+    margin-top: 25px;
+    display: inline-block;
+    color: aqua;
+    margin: 0 auto;
+    width:200px;
+    margin: 0 50px;
+    padding-top: 10px;
+}
+.pie img{
+    background-color: azure;
+    border-radius: 50px ;
+    border: solid #f1e9e9;
+    width: 100px ;
+}
+.pie h3, h2{
+    color: #fffafa;
+}
+
+
+
+
+
+
